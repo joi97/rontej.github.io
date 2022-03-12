@@ -1,0 +1,176 @@
+
+			<!--=============== SERVICES ===============-->
+			<!-- <section class="services section"> -->
+			<!-- <span class="section__subtitle">My Services</span>
+				<h2 class="section__title">What I Offer</h2>
+				<div class="services__container container grid">
+					<div class="services__card">
+						<h3 class="services__title">Marriage</h3>
+
+						<span class="services__button">
+							See more <i class="bx bx-right-arrow-alt"></i>
+						</span>
+					</div>
+
+					<div class="services__card">
+						<h3 class="services__title"></h3>
+
+						<span class="services__button">
+							See more <i class="bx bx-right-arrow-alt"></i>
+						</span>
+					</div>
+
+					<div class="services__card">
+						<h3 class="services__title"></h3>
+
+						<span class="services__button">
+							See more <i class="bx bx-right-arrow-alt"></i>
+						</span>
+					</div>
+				</div> -->
+			<!-- </section> -->
+
+
+
+
+
+			
+			<a href="#" class="img-1">
+				<img src="assets/img/matrimonio/img-1.jpg" class="gallery__image" alt="">
+				<!-- <i class="icon ion-md-expand"></i> -->
+			</a>
+			<a href="#" class="img-2">
+				<img src="assets/img/matrimonio/img-2.jpg" class="gallery__image" alt="">
+				<!-- <i class="icon ion-md-expand"></i> -->
+			</a>
+			<a href="#" class="img-3">
+				<img src="assets/img/matrimonio/img-3.jpg" class="gallery__image" alt="">
+				<!-- <i class="icon ion-md-expand"></i> -->
+			</a>
+			<a href="#" class="img-4">
+				<img src="assets/img/matrimonio/img-4.jpg" class="gallery__image" alt="">
+				<!-- <i class="icon ion-md-expand"></i> -->
+			</a>
+			<a href="#" class="img-5">
+				<img src="assets/img/matrimonio/img-5.jpg" class="gallery__image" alt="">
+				<!-- <i class="icon ion-md-expand"></i> -->
+			</a>
+			<a href="#" class="img-6">
+				<img src="assets/img/matrimonio/img-6.jpg" class="gallery__image" alt="">
+				<!-- <i class="icon ion-md-expand"></i> -->
+			</a>
+			<a href="#" class="img-7">
+				<img src="assets/img/matrimonio/img-7.jpg" class="gallery__image" alt="">
+				<!-- <i class="icon ion-md-expand"></i> -->
+			</a>
+			<a href="#" class="img-8">
+				<img src="assets/img/matrimonio/img-8.jpg" class="gallery__image" alt="">
+				<!-- <i class="icon ion-md-expand"></i> -->
+			</a>
+
+
+
+
+			
+.image-gallery a{
+	width: 100%;
+	height: 25rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image-gallery img{
+	width: 100%;
+	height: 25rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.image-gallery a i{
+	/* color: rgba(255, 255, 255, .6); */
+	font-size: 3rem;
+	position: relative;
+	z-index: 100;
+	padding: 1rem 3rem;
+	border: 2px solid rgba(255, 255, 255, .6);
+	border-radius: .4rem;
+	/* opacity: 0; */
+	transition: opacity .5s;
+}
+
+
+.image-gallery a::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+
+.image-gallery img::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.image-gallery img:hover i,
+.image-gallery img:hover::before{
+	opacity: 1;
+}
+
+.img-1{
+	grid-area: img-1;
+	background-image: url("assets/img/matrimonio/img-1.jpg");
+}
+.img-2{
+	grid-area: img-2;
+	background-image: url('assets/img/matrimonio/img-4.jpg');
+}
+.img-3{
+	grid-area: img-3;
+	background-image: url('assets/img/matrimonio/img-3.jpg');
+}
+.img-4{
+	grid-area: img-4;
+	background-image: url('assets/img/matrimonio/img-4.jpg');
+}
+.img-5{
+	grid-area: img-5;
+	background-image: url('assets/img/matrimonio/img-5.jpg');
+}
+.img-6{
+	grid-area: img-6;
+	background-image: url('assets/img/matrimonio/img-6.jpg');
+}
+.img-7{
+	grid-area: img-7;
+	background-image: url('assets/img/matrimonio/img-7.jpg');
+}
+.img-8{
+	grid-area: img-8;
+	background-image: url('assets/img/matrimonio/img-8.jpg');
+}
+
+

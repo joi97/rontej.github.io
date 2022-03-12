@@ -1,0 +1,22 @@
+#index-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 cols */
+    grid-template-rows: auto;
+    grid-gap: 10px;   
+}
+
+#index-gallery  .gallery-img{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    
+}
+
+#index-gallery  .img1{
+    grid-area: img1;
+    /* background-img: url("../img/"); */
+    
+}

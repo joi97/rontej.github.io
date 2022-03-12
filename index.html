@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--=============== FAVICON ===============-->
+		<link
+			rel="shortcut icon"
+			href="assets/img/favicon.png"
+			type="image/x-icon"
+		/>
+
+		<!--=============== SLIDER ===============-->
+		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+		<!--=============== SEMANTIC ===============-->
+		<!-- <link
+			rel="stylesheet"
+			type="text/css"
+			href="semantic/dist/semantic.min.css"
+		/> -->
+
+		<script type="module">
+			import Swiper from "https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js";
+
+			const swiper = new Swiper(".testimonial__container", {
+				spaceBetween: 24,
+				loop: true,
+				grabCursos: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				breakpoints: {
+					576: {
+						slidesPerView: 2,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 48,
+					},
+				},
+			});
+		</script>
+
+		<script
+			src="https://code.jquery.com/jquery-3.1.1.min.js"
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous"
+		></script>
+		<!-- <script src="semantic/dist/semantic.min.js"></script> -->
+
+		<!--=============== BOXICONS ===============-->
+		<link
+			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<!--=============== SWIPER CSS ===============-->
+		<link rel="stylesheet" href="" />
+
+		<!--=============== CSS ===============-->
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<!-- bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+		/>
+
+		<title>Responsive portfolio website Ansel</title>
+	</head>
+	<body>
+		<!--=============== HEADER ===============-->
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a href="#" class="nav__logo">Rontej</a>
+				<div class="nav__menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#home" class="nav__link active-link">
+								<i class="bx bx-home-alt"></i>
+							</a>
+						</li>
+						<!-- <li class="nav__item">
+							<a href="#about" class="nav__link">
+								<i class="bx bx-user"></i>
+							</a>
+						</li> -->
+						<li class="nav__item">
+							<a href="#skills" class="nav__link">
+								<i class="bx bx-book"></i>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#work" class="nav__link">
+								<i class="bx bx-briefcase-alt-2"></i>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#testimonial" class="nav__link">
+								<i class='bx bxs-face'></i>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#contact" class="nav__link">
+								<i class="bx bx-message-rounded-dots"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- theme change button -->
+				<i class="bx bx-moon change-theme" id="theme-button"></i>
+			</nav>
+		</header>
+
+		<!--=============== MAIN ===============-->
+		<main class="main" id="particles-js">
+			<!--=============== HOME ===============-->
+			<section class="home section" id="home">
+				<div class="home__container container grid">
+					<div class="home__data">
+						<span class="home__greeting">Hello, I'm</span>
+						<h1 class="home__name">Rontej Hoxha</h1>
+						<h3 class="home__education">
+							Photographer & Videomaker
+						</h3>
+
+						<!-- <div class="home__buttons">
+							<a
+								download=""
+								href="#"
+								class="button button--ghost"
+							>
+								Download CV
+							</a>
+							<a href="#about" class="button">About me</a>
+						</div> -->
+					</div>
+
+					<div class="home__handle">
+						<img
+							src="assets/img/rontej_perfil.png"
+							alt=""
+							class="home__img"
+						/>
+					</div>
+
+					<div class="home__social">
+						<a href="#" target="_blank" class="home__social-link">
+							<i class="bx bxl-instagram"></i>
+						</a>
+						<a href="#" target="_blank" class="home__social-link">
+							<i class="bx bxl-facebook-circle"></i>
+						</a>
+					</div>
+
+					<a href="#abount" class="home__scroll">
+						<i class="bx bx-mouse-alt home__scroll-icon"></i>
+						<span class="home__scroll-name"> Scroll Down </span>
+					</a>
+				</div>
+			</section>
+
+			<!--=============== SKILLS ===============-->
+			<section class="skills section" id="skills">
+				<span class="section__subtitle">My Abilities</span>
+				<h2 class="section__title">My Experience</h2>
+
+				<div class="skills_container container grid">
+					<div class="skills__content">
+						<h3 class="skills__title">Technologies</h3>
+						<div class="skills__box">
+							<div class="skills__group">
+								<div class="skills__data">
+									<i class="bx bxs-badge-check"></i>
+									<div>
+										<h3 class="skills__name">Photoshop</h3>
+										<span class="skills__level">
+											Advanced
+										</span>
+									</div>
+								</div>
+
+								<div class="skills__data">
+									<i class="bx bxs-badge-check"></i>
+									<div>
+										<h3 class="skills__name">Lightroom</h3>
+										<span class="skills__level">
+											Advanced
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--=============== WORK ===============-->
+			<section class="work section" id="work">
+				<span class="section__subtitle">My Portfolio</span>
+				<h2 class="section__title">Recent Works</h2>
+
+				<div class="work__filters">
+					<span class="work__item active-work" data-filter="all"
+						>All</span
+					>
+					<span class="work__item" data-filter=".wedding"
+						>Wedding</span
+					>
+					<span class="work__item" data-filter=".rapper">Rapper</span>
+				</div>
+
+				<div class="work__filters">
+					<span class="work__item" data-filter=".degree">Degree</span>
+					<span class="work__item" data-filter=".food">Food</span>
+					<span class="work__item" data-filter=".landscapes"
+						>Landscapes</span
+					>
+				</div>
+
+				<div class="work__container container grid">
+					<div class="work__card mix wedding">
+						<img
+							src="assets/img/matrimonioema.jpg"
+							class="work__img"
+							alt=""
+						/>
+						<h3 class="work__title">Wedding</h3>
+						<span href="" class="work__button">
+							Show more
+							<i class="bx bx-right-arrow-alt work__icon"></i>
+						</span>
+					</div>
+
+					<div class="service__modal">
+						<div
+							class="service__modal-content wrapper-gallery"
+							id="index-gallery"
+						>
+							<i class="bx bx-x service__modal-close"></i>
+							<h3 class="service__modal-title">Wedding</h3>
+
+
+
+							<!-- <div class="image-gallery"> -->
+							<div class="gallery-img img1">
+								<div><a href="#"> FIRST </a></div>
+							</div>
+							<div class="gallery-img img2">
+								<div><a href="#"> SECOND </a></div>
+							</div>
+							<div class="gallery-img img3">
+								<div><a href="#"> THIRD </a></div>
+							</div>
+							<div class="gallery-img img4">
+								<div><a href="#"> FOURTH </a></div>
+							</div>
+							<div class="gallery-img img8">
+								<div><a href="#">FIFTH </a></div>
+							</div>
+							<!-- <div class="gallery-img img6">
+								<div><a href="#"> SIXTH </a></div>
+							</div> -->
+							<div class="gallery-img img7">
+								<div><a href="#"> SEVENTH </a></div>
+							</div>
+							<!-- <div class="gallery-img img8">
+								<div><a href="#"> EIGHTH </a></div>
+							</div> -->
+
+							<!-- </div> -->
+						</div>
+					</div>
+
+					<div class="work__card mix rapper">
+						<img
+							src="assets/img/mambo.jpg"
+							class="work__img"
+							alt=""
+						/>
+						<h3 class="work__title">Rapper</h3>
+						<a href="" class="work__button">
+							Show more
+							<i class="bx bx-right-arrow-alt work__icon"></i>
+						</a>
+					</div>
+					<div class="work__card mix degree">
+						<img
+							src="assets/img/laurea.jpg"
+							class="work__img"
+							alt=""
+						/>
+						<h3 class="work__title">Degree</h3>
+						<a href="" class="work__button">
+							Show more
+							<i class="bx bx-right-arrow-alt work__icon"></i>
+						</a>
+					</div>
+					<div class="work__card mix food">
+						<img
+							src="assets/img/food.jpg"
+							class="work__img"
+							alt=""
+						/>
+						<h3 class="work__title">Food</h3>
+						<a href="" class="work__button">
+							Show more
+							<i class="bx bx-right-arrow-alt work__icon"></i>
+						</a>
+					</div>
+					<div class="work__card mix landscapes">
+						<img
+							src="assets/img/landscapes.jpg"
+							class="work__img"
+							alt=""
+						/>
+						<h3 class="work__title">Landscapes</h3>
+						<a href="" class="work__button">
+							Show more
+							<i class="bx bx-right-arrow-alt work__icon"></i>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!--=============== GALLERY ===============-->
+			<!-- <section class="section-spacing bottom-none inverse-bg"></section> -->
+
+			<!--=============== ABOUT ===============-->
+			<!-- <section class="about section" id="about"></section> -->
+
+			<!--=============== TESTIMONIALS ===============-->
+			<section class="testimonial section" id="testimonial">
+				<span class="section__subtitle">My clients say </span>
+				<h2 class="section__title">Testimonial</h2>
+
+				<div class="testimonial__container container swiper">
+					<div class="swiper-wrapper">
+						<div class="testimonial__card swiper-slide">
+							<img
+								src="assets/img/testimonial1.png"
+								alt=""
+								class="testimonial__img"
+							/>
+							<h3 class="testimonial__name">Alessio Formaggio</h3>
+							<p class="testimonial__description">
+								Con più di 13 anni di esperienza come fotografo,
+								lavoro nei campi di consulenza al cliente,
+								management fotografico e post-produzione
+								dell’immagine. La mia esperienza lavorativa mi
+								ha permesso di acquisire un buon ventaglio di
+								abilità, come ad esempio una buona visione del
+								design d’insieme dell’immagine
+							</p>
+						</div>
+						<div class="testimonial__card swiper-slide">
+							<img
+								src="assets/img/testimonial2.png"
+								alt=""
+								class="testimonial__img"
+							/>
+							<h3 class="testimonial__name">Mario Rossi</h3>
+							<p class="testimonial__description">
+								Ho un’ eccellente formazione scolastica e una
+								grande passione per i servizi fotografici per
+								eventi speciali come matrimoni e lauree. Sarei
+								estremamente entusiasta di lavorare con la
+								vostra agenzia che è specializzata in fotografie
+								per matrimon
+							</p>
+						</div>
+						<div class="testimonial__card swiper-slide">
+							<img
+								src="assets/img/testimonial3.png"
+								alt=""
+								class="testimonial__img"
+							/>
+							<h3 class="testimonial__name">Giuseppe Verdi</h3>
+							<p class="testimonial__description">
+								Sono un fotografo talentuoso ed esperto e la
+								posizione come fotografo professionista presso
+								la vostra azienda ben si abbina alle mia
+								capacità. Sono certo di poter dare un importante
+								contribuito in termini di talento e lavoro
+								all’interno del vostro team.
+							</p>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+
+			<!--=============== CONTACT ===============-->
+			<section class="contact section" id="contact">
+				<span class="section__subtitle">Get in touch</span>
+				<h2 class="section__title">Contact Me</h2>
+				<div class="contact__container container grid">
+					<div class="contact__content">
+						<h3 class="contact__title">Talk to me</h3>
+						<div class="contact__info">
+							<div class="contact__card">
+								<i
+									class="bx bx-mail-send contact__card-icon"
+								></i>
+								<h3 class="contact__card-title">Email</h3>
+								<span class="contact__card-data">
+									rontej@gmail.com
+								</span>
+
+								<a
+									href="mailto:example@correo.com"
+									target="_blank"
+									class="contact__button"
+								>
+									Write me
+									<i
+										class="bx bx-right-arrow-alt contact__button-icon"
+									></i>
+								</a>
+							</div>
+
+							<div class="contact__card">
+								<i
+									class="bx bxl-whatsapp contact__card-icon"
+								></i>
+								<h3 class="contact__card-title">Whatsapp</h3>
+								<span class="contact__card-data"
+									>+39 8888 8888</span
+								>
+
+								<a
+									href=""
+									target="_blank"
+									class="contact__button"
+								>
+									Write me
+									<i
+										class="bx bx-right-arrow-alt contact__button-icon"
+									></i>
+								</a>
+							</div>
+
+							<div class="contact__card">
+								<i
+									class="bx bxl-messenger contact__card-icon"
+								></i>
+								<h3 class="contact__card-title">Messanger</h3>
+								<span class="contact__card-data">fb.com</span>
+
+								<a
+									href=""
+									target="_blank"
+									class="contact__button"
+								>
+									Write me
+									<i
+										class="bx bx-right-arrow-alt contact__button-icon"
+									></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="contact__content">
+						<h3 class="contact__title">Write me your project</h3>
+						<form action="" class="contact__form">
+							<div class="contact__form-div">
+								<label for="" class="contact__form-tag"
+									>Names</label
+								>
+								<input
+									type="text"
+									placeholder="Insert your name"
+									class="contact__form-input"
+								/>
+							</div>
+							<div class="contact__form-div">
+								<label for="" class="contact__form-tag"
+									>Mail</label
+								>
+								<input
+									type="email"
+									placeholder="Insert your email"
+									class="contact__form-input"
+								/>
+							</div>
+							<div class="contact__form-div contact__form-area">
+								<label for="" class="contact__form-tag"
+									>Project</label
+								>
+								<textarea
+									name=""
+									placeholder="Whrite your project"
+									id=""
+									cols="30"
+									rows="10"
+									class="contact__form-input"
+								></textarea>
+							</div>
+							<button class="button">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!--=============== FOOTER ===============-->
+		<footer class="footer">
+			<div class="footer__container container">
+				<h1 class="footer__title">Rontej</h1>
+				<ul class="footer__list">
+					<li>
+						<a href="#home" class="footer__link">Home</a>
+					</li>
+					<li>
+						<a href="#work" class="footer__link">Project</a>
+					</li>
+					<li>
+						<a href="testimonial" class="footer__link"
+							>Testimonial</a
+						>
+					</li>
+				</ul>
+
+				<ul class="footer__social">
+					<a href="" target="_blank" class="footer__social-link">
+						<i class="bx bxl-facebook"></i>
+					</a>
+					<a href="" target="_blank" class="footer__social-link">
+						<i class="bx bxl-instagram"></i>
+					</a>
+				</ul>
+
+				<span class="footer__copy">
+					&#169; Joi. All rights reserved
+				</span>
+			</div>
+		</footer>
+
+		<!--=============== SCROLLREVEAL ===============-->
+		<script src=""></script>
+
+		<!--=============== SWIPER JS ===============-->
+		<script src=""></script>
+
+		<!--=============== MIXITUP FILTER ===============-->
+		<script src="assets/js/mixitup.min.js"></script>
+
+		<!--=============== MAIN JS ===============-->
+		<script src="assets/js/main.js"></script>
+
+		<!-- =============== JQUERY ===============-->
+		<!-- <script src="assets/js/app.js"></script> -->
+		<!-- <script src="assets/js/particles.js"></script> -->
+		<!-- <script
+			src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+			data-deferred="1"
+		></script> -->
+
+		<script
+			src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+			data-deferred="1"
+		></script>
+		<script src="assets/js/app.js"></script>
+
+		<script src="assets/js/swiper-bundle.min.js"></script>
+	</body>
+</html>
